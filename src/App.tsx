@@ -1,3 +1,3 @@
-import App from './hafta1/App';
+import App from './hafta2/App';
 
 export default App;
