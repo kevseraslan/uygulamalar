@@ -5,13 +5,18 @@ function App() {
   return (
     <MainLayout>
       <div className="hero">
-        <h1 className="hero-title">Modern Web Geliştirmeye Hoş Geldin</h1>
-        <p className="hero-subtitle">
-          Bu proje, hem mobil hem web uyumlu olacak şekilde, sıfırdan modern teknolojilerle,
-          en iyi tasarım pratikleri eşliğinde adım adım inşa ediliyor.
-        </p>
+        <h1 className="hero-title">Web Tasarımı ve Programlama</h1>
+        <h2 className="hero-subtitle">LAB-1 Hello Project</h2>
+
+        <div className="personal-info">
+          <p><strong>Ad Soyad:</strong> [Adınızı Buraya Yazın]</p>
+          <p><strong>Öğrenci No:</strong> [Numaranızı Buraya Yazın]</p>
+          <p><strong>Bölüm:</strong> [Bölümünüzü Buraya Yazın]</p>
+          <p><strong>Kısa Tanıtım:</strong> Merhaba! Bu proje ile Vite, React ve TypeScript dünyasına ilk adımımı atıyorum.</p>
+        </div>
+
         <button className="cta-button" onClick={() => alert('Kodlama devam ediyor!')}>
-          Şimdi Başla
+          Projeyi İncele
         </button>
       </div>
 

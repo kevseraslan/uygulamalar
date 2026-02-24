@@ -74,6 +74,31 @@ hafta .app-container {
   margin-inline: auto;
 }
 
+.personal-info {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 0 auto 2.5rem auto;
+  max-width: 500px;
+  text-align: left;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.personal-info p {
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.personal-info p:last-child {
+  margin-bottom: 0;
+}
+
+.personal-info strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
 .cta-button {
   background-color: var(--accent-color);
   color: white;
