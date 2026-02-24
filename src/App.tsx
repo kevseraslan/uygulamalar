@@ -9,9 +9,8 @@ function App() {
         <h2 className="hero-subtitle">LAB-1 Hello Project</h2>
 
         <div className="personal-info">
-          <p><strong>Ad Soyad:</strong> [Adınızı Buraya Yazın]</p>
-          <p><strong>Öğrenci No:</strong> [Numaranızı Buraya Yazın]</p>
-          <p><strong>Bölüm:</strong> [Bölümünüzü Buraya Yazın]</p>
+          <p><strong>Ad Soyad:</strong> Kevser Aslan</p>
+          <p><strong>Öğrenci No:</strong> 235541020</p>
           <p><strong>Kısa Tanıtım:</strong> Merhaba! Bu proje ile Vite, React ve TypeScript dünyasına ilk adımımı atıyorum.</p>
         </div>
 
