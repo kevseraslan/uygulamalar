@@ -9,10 +9,10 @@ const App = () => {
             </a>
 
             {/* Header and Navigation */}
-            <header className="portfolio-header">
-                <h1>Kevser Aslan</h1>
+            <header>
+                <h1 className="site-title">Kevser Aslan</h1>
                 <nav aria-label="Ana Menü">
-                    <ul className="nav-links">
+                    <ul>
                         <li><a href="#hakkimda">Hakkımda</a></li>
                         <li><a href="#projeler">Projelerim</a></li>
                         <li><a href="#iletisim">İletişim</a></li>
@@ -21,12 +21,12 @@ const App = () => {
             </header>
 
             {/* Main Content */}
-            <main className="portfolio-main">
+            <main>
                 {/* Hakkımda Bölümü */}
                 <section id="hakkimda">
                     <h2>Hakkımda</h2>
                     <div className="about-content">
-                        <figure className="about-figure">
+                        <figure>
                             <img
                                 src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400&h=400"
                                 alt="Kevser Aslan profil fotoğrafı"
@@ -34,14 +34,14 @@ const App = () => {
                             <figcaption>Kevser Aslan - Web Geliştiricisi</figcaption>
                         </figure>
 
-                        <div className="about-text">
+                        <div>
                             <p>
                                 Merhaba! Ben Kevser Aslan. Bilgisayar Mühendisliği öğrencisiyim ve modern web
                                 teknolojileri üzerine çalışmalar yapıyorum. Erişilebilir, kullanıcı dostu ve
                                 performanslı web uygulamaları geliştirmek en büyük tutkum.
                             </p>
 
-                            <ul className="tech-list" aria-label="Kullandığım Teknolojiler">
+                            <ul className="skill-tags" aria-label="Kullandığım Teknolojiler">
                                 <li>HTML5</li>
                                 <li>CSS3</li>
                                 <li>JavaScript</li>
@@ -55,23 +55,20 @@ const App = () => {
                 {/* Projelerim Bölümü */}
                 <section id="projeler">
                     <h2>Projelerim</h2>
-                    <div className="projects-grid">
+                    <div className="project-grid">
 
                         {/* Proje 1 */}
                         <article className="project-card">
                             <img
                                 src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600&h=400"
                                 alt="E-Ticaret Paneli Ekran Görüntüsü"
-                                className="project-img"
                             />
-                            <div className="project-info">
-                                <h3>Admin Dashboard</h3>
-                                <p>Modern ve duyarlı bir yönetim paneli arayüzü. Veri görselleştirme ve tablo yönetimi içerir.</p>
-                                <ul className="tech-list" aria-label="Dashboard Projesi Teknolojileri">
-                                    <li>React</li>
-                                    <li>Chart.js</li>
-                                </ul>
-                            </div>
+                            <h3>Admin Dashboard</h3>
+                            <p>Modern ve duyarlı bir yönetim paneli arayüzü. Veri görselleştirme ve tablo yönetimi içerir.</p>
+                            <ul className="skill-tags" aria-label="Dashboard Projesi Teknolojileri">
+                                <li>React</li>
+                                <li>Chart.js</li>
+                            </ul>
                         </article>
 
                         {/* Proje 2 */}
@@ -79,16 +76,13 @@ const App = () => {
                             <img
                                 src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=600&h=400"
                                 alt="Kişisel Blog Ekran Görüntüsü"
-                                className="project-img"
                             />
-                            <div className="project-info">
-                                <h3>Markdown Blog</h3>
-                                <p>Geliştiriciler için Markdown destekli hızlı ve SEO dostu kişisel blog sistemi.</p>
-                                <ul className="tech-list" aria-label="Blog Projesi Teknolojileri">
-                                    <li>Vite</li>
-                                    <li>TypeScript</li>
-                                </ul>
-                            </div>
+                            <h3>Markdown Blog</h3>
+                            <p>Geliştiriciler için Markdown destekli hızlı ve SEO dostu kişisel blog sistemi.</p>
+                            <ul className="skill-tags" aria-label="Blog Projesi Teknolojileri">
+                                <li>Vite</li>
+                                <li>TypeScript</li>
+                            </ul>
                         </article>
 
                     </div>
@@ -97,11 +91,11 @@ const App = () => {
                 {/* İletişim Bölümü */}
                 <section id="iletisim">
                     <h2>İletişim</h2>
-                    <div className="contact-container">
+                    <div>
                         {/* The exactly requested contact form block */}
                         <form action="#" method="POST" noValidate>
-                            <fieldset>
-                                <legend>İletişim Formu</legend>
+                            <fieldset style={{ border: 'none', padding: 0 }}>
+                                <legend style={{ display: 'none' }}>İletişim Formu</legend>
 
                                 <div className="form-group">
                                     <label htmlFor="name">Ad Soyad:</label>
@@ -165,9 +159,9 @@ const App = () => {
             </main>
 
             {/* Footer */}
-            <footer className="portfolio-footer">
+            <footer>
                 <p>&copy; {new Date().getFullYear()} Kevser Aslan. Tüm hakları saklıdır.</p>
-                <div className="social-links">
+                <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginTop: '1rem' }}>
                     <a href="#" aria-label="GitHub Profilim">GitHub</a>
                     <a href="#" aria-label="LinkedIn Profilim">LinkedIn</a>
                     <a href="#" aria-label="Twitter Profilim">Twitter</a>
